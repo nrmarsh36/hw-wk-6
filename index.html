@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Weather</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-5 font-weight-bold text-center"> <i class="fas fa-cloud-sun"></i> Weather Dashboard</h1>
+        </div>
+    </div>
+
+
+    <div id='firstContainer' class='container float-left'>
+        <div id='searchDiv' class='row'>
+            <h6 class='col-5'>Search for a City:</h6>
+        </div>
+        <div class='row'>
+                <div class="input-group mb-3 col-5">
+                    <input id='searchInput' type="text" class="form-control" placeholder="Name a City" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <!-- took out type='button' switched with submit -->
+                      <button class="btn btn-primary" type="submit" id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+        </div>
+        <div class='row ml-1'>
+            <div id='citiesListed'></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class='container float-right' id='secondContainer'>
+        <div class='row'>
+            <div class='card form-row col-sm-8 my-3 mx-auto'>
+                <div class='card-header' id='dateDiv'></div>
+                <div id='cityView' class='card-body'>
+                </div>
+            </div>
+        </div>
+        <div class='row mr-5'>
+            <h5>5-Day Forecast:</h5>
+                    <div id='forecastGroup' class="card-group">
+                        <div class="card px-5">
+                          <div class="card-body" id='datePlusOne'>
+                            <div class="card-text fiveW" id='weatherOne'></div>
+                          </div>
+                        </div>
+                        <div class="card px-5">
+                            <div class="card-body" id='datePlusTwo'>
+                              <div class="card-text fiveW" id='weatherTwo'></div>
+                            </div>
+                          </div><div class="card px-5">
+                            <div class="card-body" id='datePlusThree'>
+                              <div class="card-text fiveW" id='weatherThree'></div>
+                            </div>
+                          </div><div class="card px-5">
+                            <div class="card-body" id='datePlusFour'>
+                              <div class="card-text fiveW" id='weatherFour'></div>
+                            </div>
+                          </div><div class="card px-5">
+                            <div class="card-body" id='datePlusFive'>
+                              <div class="card-text fiveW" id='weatherFive'></div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+   
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/open-weather/2.0.0/openweather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+    <!-- <input id='searchInput' type="text" class="form-control">
+                <button id='searchBtn' type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button> -->

@@ -1,0 +1,29 @@
+.jumbotron {
+    background-color: rgb(15, 15, 177);
+    color: white;
+}
+
+#firstContainer {
+    align-content: left;
+}
+
+#secondContainer {
+    align-content: left;
+}
+
+#cityView {
+    align-self: flex-start;
+}
+
+
+#searchBar {
+    width: 20%;
+}
+
+.card-body {
+    align-self: center;
+}
+
+.card {
+    border: solid 3px rgb(15, 15, 177);
+}
